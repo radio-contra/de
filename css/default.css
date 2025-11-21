@@ -1,0 +1,1931 @@
+@font-face {
+    font-family: 'dosisbold';
+    src: url('../fonts/dosis/dosis-bold-webfont.woff2') format('woff2'),
+         url('../fonts/dosis/dosis-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dosisextrabold';
+    src: url('../fonts/dosis/dosis-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/dosis/dosis-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dosisextralight';
+    src: url('../fonts/dosis/dosis-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/dosis/dosis-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dosislight';
+    src: url('../fonts/dosis/dosis-light-webfont.woff2') format('woff2'),
+         url('../fonts/dosis/dosis-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dosismedium';
+    src: url('../fonts/dosis/dosis-medium-webfont.woff2') format('woff2'),
+         url('../fonts/dosis/dosis-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dosisregular';
+    src: url('../fonts/dosis/dosis-regular-webfont.woff2') format('woff2'),
+         url('../fonts/dosis/dosis-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dosissemibold';
+    src: url('../fonts/dosis/dosis-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/dosis/dosis-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ARVO */
+@font-face {
+    font-family: 'arvobold';
+    src: url('../fonts/arvo/arvo-bold-webfont.woff2') format('woff2'),
+         url('../fonts/arvo/arvo-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'arvobold_italic';
+    src: url('../fonts/arvo/arvo-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/arvo/arvo-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'arvoitalic';
+    src: url('../fonts/arvo/arvo-italic-webfont.woff2') format('woff2'),
+         url('../fonts/arvo/arvo-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'arvoregular';
+    src: url('../fonts/arvo/arvo-regular-webfont.woff2') format('woff2'),
+         url('../fonts/arvo/arvo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* CANTATA */
+@font-face {
+    font-family: 'cantata_oneregular';
+    src: url('../fonts/cantata/cantataone-regular-webfont.woff2') format('woff2'),
+         url('../fonts/cantata/cantataone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* -ENDE FONTS- */
+
+
+
+
+body {  
+width:100%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0px;
+background: white;
+color:black; 
+letter-spacing:2px;
+word-spacing:3px;
+ 
+/* 116%  entspricht dem NORMALwert */
+line-height:116%;
+ 
+/* !! unbedingt angeben, um zu verhindern, dass benutzerdefinierte
+Systemschriften  verwendet werden.  */
+font-family:arvobold, arvobold_italic, arvoregular, arvoitalic, cantata_oneregular, dosisbold, dosisregular, times, arial, helvetica, verdana, sans-serif;
+ 
+/* eine prozentuale Angabe ist in der Lage das Seitendesign zu zerstören,
+ABER ermöglich barrierefreie Darstellung (100%  = wie im Zielsystem vom Benutzer festgelegt)*/
+font-size:16px;
+} 
+
+img {
+width: 100%;
+height: auto;
+}
+
+iframe{
+height:315px;
+width:560px;
+border:none;
+}
+
+.special_announcement{
+background: #fbeff1;
+padding: 15px;
+border: 1px white;
+border-radius: 5px;
+}
+
+.video-wrapper iframe,
+.video-wrapper object,
+.video-wrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;	
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;   
+}
+
+.nur_audio{
+margin-top:10px;
+text-align:center;
+width:98%;
+}
+
+audio { 
+  width: 96%; 
+  box-shadow: 0px 1px 3px rgba(0,0, 0, 0.4);
+  border-radius: 10px;
+  transform: scale(1.05);
+}
+
+#sidebar{
+width: 35px;
+position: fixed;
+top: 50%;
+left: 3.8%;
+background-color: transparent;
+}
+
+#sidebar_ul{
+text-indent: -4px;
+text-align:center;
+padding-left: 4px;
+list-style: none;
+}
+
+#GoHomeSitemapInfo{
+display: none;
+}
+
+/* MUSS als Blockelement die ganze Zeile haben*/
+.datenfeld_vollbild_ul{
+padding-top: 8px;
+padding-bottom: 8px;
+font-family: 'dosisbold';
+width: 96%;
+background: #e9ede9;
+border-radius: 8px;
+font-size: 16px;
+}
+
+
+/*    CAPTCHA     */
+
+#div_captcha_email{
+display: none;
+position: relative;
+left: 2.9%;
+max-width: 131px;
+background: white;
+/*background: black;*/
+}
+
+#generatedCaptchaForEmail{
+display: block;
+margin-top: 5px;
+border: 1px solid #00B7F9;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+background-color:#00B7F9;
+/* background-color: green; */
+}
+
+#div_captcha_telegram{
+display: none;
+position: relative;
+left: 2.9%;
+max-width: 131px;
+background: white;
+/*background: black;*/
+}
+
+#generatedCaptchaForTelegram{
+display: block;
+margin-top: 5px;
+border: 1px solid #00B7F9;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+background-color:#00B7F9;
+/* background-color: green; */
+}
+
+input[type=text] {
+font-family: 'dosisbold';
+font-size: 13px;
+text-align: center;
+padding-top: 4px;
+padding-bottom: 4px;
+display: block;
+width:100%;
+border: 1px solid;
+border-top-color: white;
+border-left-color: red;
+border-right-color: red;
+border-bottom-color: red;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+box-sizing: border-box;
+background-color: white;
+}
+   
+button{
+display: block;
+width:100%;
+background-color: #00B7F9;
+border-radius: 4px;
+border: 1px white;
+color: white;
+margin-top: 5px;
+padding: 12px 30px;
+text-decoration: none;
+cursor: pointer;
+}
+   
+canvas{
+/*prevent interaction with the canvas*/
+pointer-events:none;
+}
+
+#img_success{
+display: none;
+}
+
+#telegram_success{
+display: none;
+/*background: gray;*/
+}
+
+/*  CAPTCHA ENDE  */
+
+/* unvisited link */
+a:link {
+color: black;
+text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+color: black;
+}
+
+/* mouse over link */
+a:hover {
+color: white;
+cursor:pointer;
+}
+
+/* selected link */
+a:active {
+color: yellow;
+}
+
+.footer_a:link{
+color: white;
+}
+
+.footer_a:visited{
+color: white;
+}
+
+.link_im_text_xtrasmall{
+padding-top: 4px;
+padding-left: 3px;
+padding-right: 3px;
+padding-bottom: 4px;
+background-color: #e9ede9;
+border-radius: 8px;
+color: black;
+line-height: 175%;
+}
+
+.link_im_text_xtrasmall:hover{
+padding-top: 4px;
+padding-left: 3px;
+padding-right: 3px;
+padding-bottom: 4px;
+background-color: #799496;
+border-radius: 8px;
+color: white;
+line-height: 175%;
+cursor:pointer;
+}
+
+.link_im_text{
+padding-top: 4px;
+padding-left: 5px;
+padding-right: 5px;
+padding-bottom: 4px;
+background-color: #e9ede9;
+border-radius: 8px;
+color: black;
+line-height: 175%;
+}
+
+.link_im_text:hover{
+padding-top: 4px;
+padding-left: 5px;
+padding-right: 5px;
+padding-bottom: 4px;
+background-color: #799496;
+border-radius: 8px;
+color: white;
+line-height: 175%;
+cursor:pointer;
+}
+
+.order_now_img_hover:hover{text-decoration: none;}
+.news_img_hover:hover{text-decoration: none;}
+.datenschutz_img_hover:hover{text-decoration: none;}
+
+/* versteckt das -jeweilige- hover-image */
+.hide_until_hover{
+display: none;
+}
+
+.order_now_img_hover:hover img:first-child{display:none;}
+.order_now_img_hover:hover img:last-child{display:inline-block;}
+.news_img_hover:hover img:first-child{display:none;}
+.news_img_hover:hover img:last-child{display:inline-block;}
+.datenschutz_img_hover:hover img:first-child{display:none;}
+.datenschutz_img_hover:hover img:last-child{display: inline-block;}
+
+.zitate{
+font-family: 'arvobold_italic';
+font-size: 18px;
+font-weight: normal;
+letter-spacing: 2px;
+word-spacing: 1px;
+line-height: 110%;
+color: #F2CA26;
+text-align: center;
+margin-left: 2px;
+margin-top:0px;
+margin-bottom:0px;
+padding: 20px;
+border: 2px #C4BDA8;
+border-radius: 5px;
+background-color: white;
+background-color: #4ea5d9;
+}
+
+.zitate_quellen{
+font-family: 'arvoregular';
+font-size: 12px;
+letter-spacing: 2px;
+line-height: 11px;
+color: white;
+}
+
+#stage{
+width:80%;	
+background: white;
+}
+
+/*  Autor  */
+
+#container_site_banner{
+position: relative;
+width:100%;
+height: 24%;
+background-image: linear-gradient(to right, saddlebrown , black);
+}
+  
+.sitebanner_bottomleft_mnu {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;  
+}
+
+#img_interwiew_economia_de_guerra{
+margin-top:3px;
+}
+
+#img_warum_nicht_auch_ziele_in_russland{
+
+}
+
+#img_inflation_orf{
+
+}
+
+#img_sagt_nein:hover{
+-webkit-filter: brightness(1.1);
+filter: brightness(1.1);
+}
+
+#img_sagt_nein{
+-webkit-filter: brightness(1.1);
+filter: brightness(1.6);
+-webkit-filter: contrast(2);
+filter: contrast(2);
+}
+
+#img_schiessbude_earth{
+
+}
+
+#img_totaler_frieden{
+width: 100%;
+border: 1px solid;
+border-color: white;
+border-radius: 4px;
+}
+
+#introduce_news{
+display: none;
+width: 96%;
+margin-top: 30px;
+margin-left: 2%;
+background: white;
+}
+
+
+.img_buy_book:hover{
+-webkit-filter: brightness(1.1);
+filter: brightness(1.1);
+}
+
+.img_link_video:hover{
+-webkit-filter: brightness(1.1);
+filter: brightness(1.1);
+cursor:zoom-in;
+}
+
+.img_download_helligkeit:hover{
+-webkit-filter: brightness(1.2);
+filter: brightness(1.2);
+cursor:zoom-in;
+}
+
+#img_download_helligkeit_widerstand:hover{
+border-radius: 38px;
+background-color: LightPink;
+}
+
+#img_download_helligkeit_widerstand{
+-webkit-filter: brightness(1.2);
+filter: brightness(1.2);
+cursor:zoom-in;
+}
+
+.img_download_kontrast:hover{
+-webkit-filter: contrast(2);
+filter: contrast(2);
+cursor:zoom-in;
+}
+
+.img_fixedsize_farbeROT{
+width: 33%;
+transition: all 0.5s ease;
+}
+
+.img_fixedsize_farbeROT:hover{
+width: 34%;
+}
+
+
+.img_fixedsize_GS{
+width: 20%;
+transition: all 0.5s ease;
+}
+
+.img_fixedsize_GS:hover{
+width: 21%;
+}
+
+.img_link_kontrast:hover{
+-webkit-filter: contrast(2);
+filter: contrast(2);
+}
+
+.img_download_farbrotation:hover{
+-webkit-filter: hue-rotate(45deg);
+filter: hue-rotate(45deg);
+cursor:zoom-in;
+}
+
+.img_download_farbrotation_2{
+width: 68%;
+transition: transform 5s;
+}
+
+.img_download_farbrotation_2:hover{
+cursor:none;
+transform: rotate(360deg);
+}
+
+#div_MyButton{
+background-color: white;
+}
+
+#button_was_clicked{
+margin-top: -15px;
+display: none;
+}
+
+@keyframes scroll {
+   100% {
+     background-position: 0px -6000%;	 
+   }   
+}
+
+#wasserwege{
+background-image: url("../images/wasser.png");
+background-size: repeat; 
+border: 1px dashed #32a1ce;
+border-radius: 5px;
+padding-bottom:8px;
+cursor:wait;
+animation: scroll 300s linear infinite;
+}
+
+#wasserwege:hover{
+ /*  animation: scroll 10s linear infinite;  */
+animation-play-state: paused; 
+}
+
+#img_cows_communicating{
+width: 92.9%;
+transition: all 0.5s ease;
+}
+
+#img_cows_communicating:hover{
+-webkit-filter: contrast(1.4);
+filter: contrast(1.4);
+width: 93%;
+}
+
+#skelett_bad_duerrenberg{
+border-radius: 5px;
+width: 98%;
+-webkit-filter: contrast(1.3);
+filter: contrast(1.3);
+transition: all 0.5s ease;
+}
+
+#skelett_bad_duerrenberg:hover{
+width: 98.5%;
+}
+
+a.link_im_text_xtrasmall_wasser{
+padding-top: 4px;
+padding-left: 3px;
+padding-right: 3px;
+padding-bottom: 4px;
+background-color: #32a1ce;
+opacity: 0.8;
+border-radius: 8px;
+color: white;
+line-height: 175%;
+}
+
+a.link_im_text_xtrasmall_wasser:hover{
+padding-top: 4px;
+padding-left: 3px;
+padding-right: 3px;
+padding-bottom: 4px;
+opacity: 1;
+border-radius: 8px;
+color: #F9E900;
+line-height: 175%;
+}
+
+
+/*  Der Countdown */
+#countdown{
+/*width:100%;*/
+margin-top:-1%;
+margin-bottom:-1%;
+margin-left:auto;
+margin-right:auto;
+text-align: center;
+font-size: 1.3rem;
+word-spacing: 1.2em;
+color:black;
+}
+
+#days{
+font-weight: 700;
+color: #FF0001;
+}
+
+#hours{
+font-weight: 700;
+color: #3D3B8E;
+}
+
+#minutes{
+font-weight: 700;
+color: #395C6B;
+}
+
+#seconds{
+font-weight: 700;
+color: #BFBFBF;
+}
+
+#highnoon{
+
+text-align: center;
+}
+
+#timesUp{
+display:none;
+margin:auto;
+text-align: center;
+}
+
+#klimawandel_methankrater{
+display:none;
+margin-bottom: 2px;
+text-align: center;
+}
+
+#klimawandel_methankrater_text{
+display:none;
+text-align: center;
+margin-top: -5%;
+/*  background-color: yellow;  */
+}
+
+#klimawandel_wirkung{
+display:none;
+margin-bottom:5px;
+text-align: center;
+}
+
+#klimawandel_reaktion{
+display:none;
+margin-bottom: 0px;
+text-align: center;
+}
+
+#klimawandel_reaktion_2{
+display:none;
+margin-bottom: 3px;
+text-align: center;
+}
+
+#widerstand{
+display:none;
+margin-bottom: 10px;
+text-align: center;
+}
+
+#text_countdown_abgelaufen{
+display:none;
+}
+
+.globe_ohne_feuer{
+text-align: center;
+overflow: hidden;
+}
+
+#mexicanos_headline{
+ display:none; 
+ text-align: center;
+ margin-top: 1%; 
+ margin-bottom: -10px;
+ }
+
+#headline_timesup{ 
+ text-align: center; 
+ color:black; 
+ font-weight: bold;	
+}
+
+#hotHouseEarth{
+display: none;    
+width: 100%;
+/* height: 100%; */
+text-align: center;
+padding-bottom: 52.0%;
+overflow:hidden;
+}
+
+/* REAGIERT auf hover ! ==> indirekt auch auf click  */
+#hotHouseEarth:hover{
+transform: scale(1.01);
+overflow:hidden;
+}
+
+#if_hover_hotHouseEarth{
+display:none;
+margin-top: -10px;
+padding-bottom: 10px;
+text-align: center;
+}
+
+#hotHouseIframe{
+border: none;
+overflow:hidden;
+}
+
+#schweinestall{
+display: none;
+}
+
+#schweinestall a:hover{
+cursor: crosshair;
+}
+
+#img_volksdiener{
+transition: all 0.2s ease-out;
+border-radius: 10px 10px 0 0;
+}
+
+#img_volksdiener:hover{
+transform: scale(1.01);
+}
+
+#img_bewerbung{
+transition: all 0.2s ease-out;
+border-radius: 10px;
+}
+
+#img_bewerbung:hover{
+transform: scale(1.01);
+}
+
+#klimawandel_wirkung_lizenzen{
+display: none;
+}
+
+#klimawandel_wirkung_musik{
+display: none;
+}
+
+.bildnachweise{
+height: 100%;
+display: flex;
+/*vertikal*/
+align-items: center;
+/*horizontal*/
+justify-content: center;
+}
+
+#bildnachweise_hothouse_earth{
+background-color: white;
+border:1px solid black;
+border-radius: 10px;
+margin-top: 4%;
+padding-right: 1%;
+}
+
+
+#inhaltsverzeichnis{
+margin-left: -2%;
+}
+
+#copyright_information{
+background-image: url("../images/pattern_perspective_deep_1.png");
+background-size: contain;
+background-repeat: repeat;
+}
+
+.copyright_information_hover_transform{
+color: black;
+transition: all 2.2s ease;
+}
+
+
+#redstar{
+font-size: 193.2%;
+border-radius: 55%;
+transform: scale(1);
+animation: pulse 4s infinite;
+color:red;
+}
+
+@keyframes pulse {
+    
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.2);        /*   0, 0, 0, 0.7  */
+        background-color: #FFC3E9;
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 1.4em rgba(0, 0, 0, 0);         /*   0, 0, 0, 0    */
+		 background-color: white;
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 172, 51, 0);       /*   0, 0, 0, 0    */
+		 background-color: white;
+	}
+}
+
+#copyright_information>legend{
+color: gray;
+}
+
+.copyright_information_hover_transform:hover{
+color: red;
+font-size: 83.2%;
+}
+
+#copyright_information p{
+text-align:center;
+}
+
+.offer_information_sitemap{
+display: flex;
+/*vertikal*/
+align-items: center;
+/*horizontal*/
+justify-content: left;
+
+padding-left: 1%;
+background-color: #f5f5dc;
+border-radius: 15px;
+}
+
+
+.offer_information{
+display: flex;
+/*vertikal*/
+align-items: center;
+/*horizontal*/
+justify-content: center;
+
+background-color: #F0FFFF;
+border-radius: 15px;
+}
+
+table.table_offer_information{
+line-height: 25px;
+}
+
+table.table_offer_information td:nth-child(odd){
+text-align: right;
+}
+
+@keyframes offer_information_sitemap_times_up_bordercolor {
+  50% {border-color: darkgray; background-color: cornsilk; color: black;}
+}  
+
+#offer_information_sitemap_times_up{
+display: none;
+color: dimgray;
+border: #e9ede9 solid 2px;
+background-color: #f5f5dc;
+margin-top:25px;
+padding:7px;
+border-radius:10px;
+animation: offer_information_sitemap_times_up_bordercolor 5s infinite;
+}
+
+#offer_information_sitemap_times_up:hover{
+background-color: #e9ede9;
+}
+
+.time{
+-webkit-animation: time 1s ease-in-out infinite alternate;
+-moz-animation: time 1s ease-in-out infinite alternate;
+animation: time 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes time {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #000, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+/*   Ende Countdown */
+
+
+
+#img_news_eigentum{
+float:left;
+width: 45%;
+margin-top: 1%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+}
+
+#img_news_preise{
+float:left;
+width: 45%;
+margin-top: 1%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+}
+
+#img_news_konsequenz_eigentum{
+float:left;
+width: 45%;
+margin-top: 1%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+}
+
+#img_news_gebrauchswert{
+float:left;
+width: 45%;
+margin-top: 1%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+}
+
+#img_news_tauschwert{
+float:left;
+width: 45%;
+margin-top: 1%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+}
+
+#img_news_arbeit{
+float:left;
+width: 50%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+}
+
+#img_news_lohnarbeit{
+float:left;
+width: 50%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+}
+
+#img_news_lohnstueckkosten{
+float:left;
+width: 50%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+}
+
+#img_news_preis_warensammlung{
+float:left;
+width: 50%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+}
+
+#img_news_ich_bin_ich{
+float:left;
+width: 50%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+}
+
+#img_news_tarifstreit{
+float:left;
+width: 50%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+}
+
+#img_news_nichts_unbekanntes{
+float:left;
+width: 50%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+}
+
+#img_news_preiserhoehung_und_steuer{
+float:left;
+width: 50%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+}
+
+#img_news_einkommen{
+float:left;
+width: 50%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+}
+
+#img_sitemap_info{
+float:left;
+width: 50%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+}
+
+#img_news_lebenszeit{
+float:left;
+width: 50%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+}
+
+#img_news_schulden{
+float:left;
+width: 50%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+}
+
+#img_news_bombenstimmung{
+float:left;
+width: 50%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+border: 1px solid;
+border-color: white;
+border-radius: 4px;
+}
+
+#img_news_bombenstimmung_2{
+float:left;
+width: 50%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+border: 1px solid;
+border-color: white;
+border-radius: 4px;
+}
+
+#img_news_bombenstimmung_2_fp{
+float:left;
+width: 50%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+border: 1px solid;
+border-color: white;
+border-radius: 4px;
+}
+
+#img_news_ukraine{
+float:left;
+width: 50%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+border: 1px solid;
+border-color: white;
+border-radius: 4px;
+}
+
+#img_news_ukraine_fp{
+float:left;
+width: 50%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+border: 1px solid;
+border-color: white;
+border-radius: 4px;
+}
+
+#img_news_ukraine_nato{
+float:left;
+width: 50%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+border: 1px solid;
+border-color: white;
+border-radius: 4px;
+}
+
+#img_news_ukraine_nato_fp{
+float:left;
+width: 50%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+border: 1px solid;
+border-color: white;
+border-radius: 4px;
+}
+
+
+#img_news_politik{
+float:left;
+width: 50%;
+margin-left: 0.6%;
+margin-right: 6.0%;
+margin-bottom:2%;
+border: 1px solid;
+border-color: white;
+border-radius: 4px;
+}
+
+#img_donate_whois{
+float:left;
+width: 8.8%;
+margin-top:1%;
+margin-left: 0.6%;
+margin-right: 1.8%;
+margin-bottom: 0.6%;
+/* background: #CE4257; */
+}
+
+#img_donate_now{
+float:left;
+width: 70.0%;
+margin-top:1%;
+margin-left: 15.0%;
+margin-right: 15.0%;
+margin-bottom:2.0%;
+/* background: #CE4257; */
+}
+
+#img_donate_now_sitemap{
+float:left;
+width: 70.0%;
+margin-top:1%;
+margin-left: 15.0%;
+margin-right: 15.0%;
+margin-bottom:2.0%;
+/* background: #CE4257; */
+}
+
+#img_1-2-3{
+
+}
+
+#introduce_next{
+display: none;
+width:100%;
+/* muss eine Hoehe haben ! */
+height:400px;
+background: #CE4257;
+
+/*  wenn als fieldset
+display: none;
+width: 96%;
+margin-top: 30px;
+margin-left: 2%;
+height: 400px;
+background: white;
+*/
+}
+
+#info_txt_next{
+font-family: 'arvoregular';
+font-size: 16px;
+word-spacing: 1.5px;
+margin-left: 15px;
+margin-right: 15px;
+background: #CE4257;
+/*background-color: green;*/
+}
+
+#buch_next_img{
+border: 0px;
+}
+
+#kontakt_arten{
+display: none;
+width: 96%;
+margin-top: 30px;
+margin-left: 2%;
+background: white;
+}
+
+#sitemap_info{
+display: none;
+width: 96%;
+margin-top: 30px;
+margin-left: 2%;
+background: white;
+}
+
+#introduce_order{
+display: none;
+width: 96%;
+margin-top: 30px;
+margin-left: 2%;
+background: white;
+/*background: gray;*/
+}
+
+.datenfeld_vollbild{
+margin-bottom: 40px;
+}
+
+.datenfeld_vollbild img{
+width: 15%;
+}
+
+.div_ul_stories{
+/*background:red;*/
+padding-left: 5px;
+}
+
+.ul_vollbild{
+
+}
+
+.li_vollbild{
+font-family: 'arvoregular';
+font-size: 13px;
+line-height: 18px;
+word-spacing: 1.5px;
+}
+
+
+/*  ataennchen   */
+.datenfeld_vollbild #img_success img{
+width: 60%;
+margin-left: 21%;
+background-image: url(../images/hg_sucess.png);
+background-size: cover;
+}
+
+.datenfeld_vollbild img#telegram_img_link{
+width: 62%;
+margin-left: 20.0%;
+/*background: gray;*/
+}
+
+.apple_vorschrift{
+text-indent: 4px;
+font-size: 18px;
+font-family: 'arvobold';
+font-style: normal;
+}
+
+.datenfeld_vollbild img#apple_img_link{
+width: 16%;
+margin-left: 0%;
+/*background: gray;*/
+}
+
+#introduce_datenschutz{
+display: none;
+width: 96%;
+margin-top: 30px;
+margin-left: 2%;
+background: white;
+}
+
+#erklaerung_impressum{
+display: none;
+width: 96%;
+margin-top: 30px;
+margin-left: 2%;
+background: white;
+}
+
+#erklaerung_datenschutz{
+display: none;
+width: 96%;
+margin-top: 30px;
+margin-left: 2%;
+background: white;
+}
+
+#erklaerung_agb{
+display: none;
+width: 96%;
+margin-top: 30px;
+margin-left: 2%;
+background: white;
+}
+
+/*  Buch Werbung  */
+
+#container_promotion{
+width:100%;
+height: 400px;
+background: #CE4257;
+/*background: olive;*/
+}
+
+.buch_info{
+float:left;
+width:55%;
+height: 400px;
+color: #FFF;
+text-align: center;
+display: flex;
+/*vertikal*/
+align-items: center;
+/*horizontal*/
+justify-content: center;
+background: #CE4257;
+/*background: black;*/
+}
+
+
+#info_txt{
+font-family: 'arvoregular';
+font-size: 16px;
+word-spacing: 1.5px;
+margin-left: 15px;
+margin-right: 15px;
+background: #CE4257;
+/*background-color: green;*/
+}
+
+.buch_img{
+float:left;
+width:25%;
+height: 400px;
+/*height: 24%;*/
+display: flex;
+/*vertikal*/
+align-items: center;
+/*horizontal*/
+justify-content: center;
+background: #CE4257;
+/*background: coral;*/
+}
+
+.bild_vom_buch{
+margin-top: 5%;
+margin-bottom: 4%;
+width: 64%;
+}
+
+.buch_isbn{
+float:right;
+width:20%;
+height: 400px;
+display: flex;
+/*vertikal*/
+align-items: center;
+/*horizontal*/
+justify-content: center;
+flex-direction: column;
+background: #CE4257;
+/*background: lightcoral;*/
+}
+
+.bild_bestellen{
+width: 64%;
+}
+
+.ebook{
+width:100%;
+font-family: 'arvoitalic';
+font-size: 15.0px;
+word-spacing: 1.3px;
+font-weight: normal;
+text-align: center;
+color: white;
+/*
+margin-left: 5px;
+margin-right: 5px;
+*/
+background: #CE4257;
+/*background: black;*/
+
+}
+
+.isbn{
+width:100%;
+font-family: 'arvoregular';
+font-size: 13px;
+word-spacing: 1.5px;
+font-weight: normal;
+text-align: center;
+color: white;
+margin-left: 5px;
+margin-right: 5px;
+background: #CE4257;
+/*background: black;*/
+}
+
+
+/*  Menu  */
+
+#container_mnu{
+width:100%;
+height:40px;
+/* background: red; */
+opacity: 0.8;
+}
+
+#mnu{
+float:left;
+width:80%;
+height:40px;
+
+display: flex;
+/*vertikal*/
+align-items: center;
+/*horizontal*/
+/*justify-content: center;*/
+
+font-size: 18px;
+font-family: dosisregular, times;
+font-weight: bold;
+background: #F2CA26;
+}
+
+.mnu_select{
+margin-left: 4%;
+}
+
+#mnu_home{
+float: left;
+margin-left: 9.1%;
+margin-right: 4%;
+}
+
+#mnu_news{
+float: left;
+}
+
+#mnu_next{
+float: left;
+}
+
+#mnu_kontakt{
+float:right;
+width:20%;
+height:40px;
+background: #F2CA26;
+}
+
+#kontakt{
+padding-top: 2px;
+margin: auto;
+width: 48px;
+}
+
+
+/*  Content  */
+
+#container_content{
+width:100%;
+/*background: orange;*/
+}
+
+.hruler_headline_rubriken{
+border: none;
+border-top-color: hotpink;
+border-top-style: double;
+border-top-width: 8px;
+margin-top: -15px;
+margin-bottom:20px;
+}
+
+.hruler_videos_absatz{
+border: 2px solid hotpink;
+margin-top: 5px;
+margin-bottom: -1px;
+}
+
+#stories_container{
+float:left;
+padding-left:0.8%;
+width: 79.2%;
+background: ivory;
+/*background: green;*/
+}
+
+#stories_headline{
+font-family: 'dosisbold';
+font-size: 24px;
+text-indent: 6px;
+}
+
+.datenfeld_content_stories{
+margin-left:2%;
+margin-bottom:20px;
+width:93%;
+background: ivory;
+/*background: green;*/
+}
+
+fieldset {
+	padding-top:10px;
+	border:1px solid #666;
+	-moz-border-radius:8px;
+    border-radius:8px;	
+    -webkit-border-radius: 8px;	
+	/*box-shadow:0 0 4px #666;*/
+	/*background-color: green;*/
+}
+
+legend{
+font-family: 'dosisbold';
+font-size: 20px;
+}
+
+.bg_rainbow{
+
+}
+
+legend.bg_rainbow{  
+   padding: 5px;
+   border-radius: 8px;   
+   background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );  
+}
+
+legend.bg_rainbow:hover{  
+   padding: 5px;
+   border-radius: 0px;  
+   background: linear-gradient(
+        90deg,
+        black,
+        red,
+        yellow        
+    );  
+}
+
+legend.bg_rainbow a{
+color: white;
+}  
+
+legend.bg_rainbow a:hover{
+color: FireBrick;
+} 
+
+.stories_txt{
+font-family: 'arvoregular';
+font-size: 13px;
+padding-left: 10px;
+/*background-color: red;*/
+}
+
+.news_datum{
+display: inline-block;
+clear: right;
+font-size: 12px;
+padding-left:0.7%;
+padding-right:0.6%;
+background-color: #e9ede9;
+border-radius: 8px;
+margin-bottom: -10px;
+}
+
+.global_headline{
+display: inline-block;
+clear: right;
+font-size: 14px;
+padding-left:0.7%;
+padding-right:0.6%;
+background-color: #e9ede9;
+border-radius: 8px;
+margin-bottom: -10px;
+}
+
+#info_container{
+float:left;
+width:18%;
+background: white;
+/*background: lime;*/
+padding-left: 1%;
+padding-right:1%;
+padding-bottom: 2%;
+}
+
+#info_headline{
+font-family: 'dosisbold';
+font-size: 24px;
+text-align: center;
+}
+
+.videotitel{
+font-family: 'arvoregular';
+font-size: 11px;
+line-height: 15.2px;
+word-spacing: 0.4px;
+margin-bottom: -1px;
+overflow:hidden;
+}
+
+/*  footer  */
+
+#container_footer{
+float:left;
+margin-left: 0%;
+width:100%;
+height: 40px;
+/* background: gray; */
+}
+
+#verlag{
+float:left;
+margin-right: 0%;
+width:18%;
+height: 40px;
+background: #05204A;
+display: flex;
+ /*vertikal*/
+align-items: center;
+ /*horizontal*/
+justify-content: center;
+}
+
+#impressum_agb_privacy{
+float:left;
+width:64%;
+height: 40px;
+font-family: 'times';
+font-size: 14px;
+word-spacing: 1.0px;
+color: white;
+background: #05204A;
+display: flex;
+/*vertikal*/
+align-items: center;
+/*horizontal*/
+/*justify-content: center;*/
+}
+
+#impressum{
+margin-left:1.0%;
+margin-right: 1.0%;
+width: 37.0%;
+/* background: red; */
+}
+
+#erklaerung_impressum #info_impressum img{
+width: 37%;
+margin-left: 0.5%;
+background-image: url(../images/hg_impressum.png);
+background-size: cover;
+}
+
+#erklaerung_datenschutz #info_datenschutz img{
+width: 37%;
+margin-left: 0.5%;
+background-image: url(../images/hg_datenschutz.png);
+background-size: cover;
+}
+
+#donate{
+width: 28%;
+margin-right: 1.0%;
+text-align: center;
+/* background: green; */
+}
+
+#privacy{
+margin-right: 1.0%;
+width: 29%;
+text-align: right;
+/* background: red; */
+}
+
+#facebook{
+float:right;
+margin-right: 0%;
+width:18%;
+height: 40px;
+background: #05204A;
+display: flex;
+ /*vertikal*/
+align-items: center;
+ /*horizontal*/
+justify-content: center;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+  body{background: white;}
+  h2{font-family: 'arvoregular'; font-style: normal; font-size: 80%;}
+  h3{font-family: 'arvoregular'; font-style: normal; font-size: 80%;}  
+  .zitate{font-size: 13px; letter-spacing: 2px; word-spacing: 1px;} 
+  .zitate_quellen{font-size: 10px; letter-spacing: 2px; word-spacing: 1px;}
+  .img_fixedsize_farbeROT{width: 70%;}
+  .img_fixedsize_GS{width: 40%;}  
+  #stage{width:100%;}
+  #sidebar{width: 20px; top: 465px; left: 0.1%;}
+  .datenfeld_vollbild_ul{width: 90.6%; font-size: 11px; padding-left: 30px;}    
+  #container_mnu{height: 25px;}
+  #mnu{height: 25px;}
+  #mnu_home{margin-left: 4.0%;}
+  #kontakt{padding: 0px; margin: auto; width: 32px;}
+  #mnu_kontakt{height: 25px;}
+  #container_promotion{height: 240px;}
+  .buch_info{height: 240px;}
+  #info_txt{font-family: 'arvoregular'; font-weight: normal; font-size: 8.0px; line-height: 10px; word-spacing: 1.1px; margin-left: 4px; margin-right: 0px;}
+  #info_txt_next{font-family: 'arvoregular'; font-weight: normal; font-size: 9px; line-height: 10.6px; word-spacing: 1.3px; margin-left: 4px; margin-right: 0px;}
+  .buch_img{height: 240px;}
+  .bild_vom_buch{width: 90%;}
+  .buch_isbn{height:240px;}
+  .ebook{font-size: 10px; line-height: 12px;}
+  .bild_bestellen{width: 80%;}
+  .isbn{font-family: 'arvoregular'; font-size: 9.0px; line-height: 12px; margin-top: 0px;}
+  #stories_headline{font-size: 16px;}
+  #info_headline{font-size: 16px;}
+  #donate_headline{font-size: 16px;}
+  .hruler_headline_rubriken{border-top-width: 6px; margin-top: -13px;}  
+  .news_datum{font-size: 10.4px;}
+  .stories_txt{font-size: 10.8px; line-height: 12.8px; padding-left: 8px;}
+  .videotitel{font-size: 8.6px; line-height: 10.6px; margin-bottom: -0.1%;}
+  .link_im_text_xtrasmall{font-size: 8.0px;}
+  .link_im_text_xtrasmall_wasser{font-size: 8.0px;}
+   #bildnachweise_hothouse_earth .link_im_text_xtrasmall {font-size: 13px;}  
+   legend{font-size: 12.2px;}   
+  .datenfeld_content_stories{width:88.0%;}
+  #introduce_news{margin-top: 20px;}
+  #introduce_next{height: 245px;}
+  #kontakt_arten{margin-top: 20px;}
+  #introduce_order{margin-top: 20px;}
+  .datenfeld_vollbild{margin-bottom: 20px;}
+  #introduce_datenschutz{margin-top: 20px;}
+  #erklaerung_impressum{margin-top: 20px;}
+  #erklaerung_impressum #info_impressum img{width: 94%;}
+  #erklaerung_datenschutz #info_datenschutz img{width: 93%;}
+  #erklaerung_datenschutz{margin-top: 20px;}
+  .ul_vollbild{margin-left: -8px;}
+  .li_vollbild{font-size: 10.4px; line-height: 16px; word-spacing: 1.5px;}
+  #erklaerung_agb{margin-top: 20px;}
+  .apple_vorschrift{font-family: 'arvoregular'; font-size: 16px;}
+  .datenfeld_vollbild img#apple_img_link{width: 46%;}
+  #impressum{font-size: 11.0px;}
+  #img_donate_whois{width: 19.5%; margin-top: 1.9%; margin-right: 4.8%; margin-bottom: 1.1%;}
+  #img_donate_now{width: 95.4%; margin-left: 2.3%; margin-right: 2.3%;}
+  #img_donate_now_sitemap{width: 95.4%; margin-left: 2.3%; margin-right: 2.3%;}   
+  #donate{font-size: 11.0px;}
+  #privacy{font-size: 11.0px;}
+  #hotHouseEarth{padding-bottom: 24.5%;}  
+}  
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px){
+  /* GREEN */
+  body{background: #00cc99;}
+  h2{font-family: 'arvoregular'; font-style: normal; font-size: 85%;}
+  h3{font-family: 'arvoregular'; font-style: normal; font-size: 85%;}
+  .zitate{font-size: 12.8px; letter-spacing: 2px; word-spacing: 1px;} 
+  .zitate_quellen{font-size: 9.6px; letter-spacing: 2px; word-spacing: 1px;}
+  .img_fixedsize_farbeROT{width: 65%;}
+  .img_fixedsize_GS{width: 35%;}  
+  #stage{width: 83%;}
+  #sidebar{left: 1.8%;}
+  .datenfeld_vollbild_ul{width: 92.6%; font-size: 12px;}    
+  #container_mnu{height: 32px;}
+  #mnu{height: 32px;}
+  #mnu_home{margin-left: 6.2%;}
+  #kontakt{padding-top: 2px; margin: auto; width: 38px;}
+  #mnu_kontakt{height: 32px;}
+  #container_promotion{height: 265px;}
+  .buch_info{height: 265px;}
+  #info_txt{font-family: 'arvoregular'; font-size: 11.2px; line-height: 12px;}
+  #info_txt_next{font-size: 11.0px; line-height: 12px;}
+  .buch_img{height: 265px;}
+  .bild_vom_buch{width: 87%;}
+  .buch_isbn{height: 265px;}
+  .ebook{font-size: 13px; line-height: 16px;}
+  .bild_bestellen{width: 75%;}
+  .isbn{font-family: 'arvoregular'; font-size: 10.0px;}
+  #stories_headline{font-size: 21px;}
+  #info_headline{font-size: 21px;}
+  #donate_headline{font-size: 21px;}
+  #img_donate_whois{width: 20.5%; margin-top: 1.9%; margin-right: 4.8%; margin-bottom: 1.3%;}  
+  .hruler_headline_rubriken{border-top-width: 7px; margin-top: -14px;}  
+  .news_datum{font-size: 11.2px;}
+  .stories_txt{font-size: 11.2px; line-height: 12.8px; padding-left: 10px;}
+  .videotitel{font-size: 10.4px; line-height: 12.4px; margin-bottom: -0.1%;}
+  .datenfeld_content_stories{width: 90.2%;}  
+  #introduce_next{height: 265px;}
+  #erklaerung_impressum #info_impressum img{width: 66%;}
+  #erklaerung_datenschutz #info_datenschutz img{width: 66%;}
+  .li_vollbild{font-size: 11px; line-height: 16px; word-spacing: 1.5px;}
+  .apple_vorschrift{font-family: 'arvoregular'; font-size: 17px;}
+  .datenfeld_vollbild img#apple_img_link{width: 28%;}
+  #hotHouseEarth{padding-bottom: 38.5%;}  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+ /* BLUE */
+  body{background:  #439ACF;}
+  h2{font-family: 'arvoregular'; font-style: normal; font-size: 95%;}
+  h3{font-family: 'arvoregular'; font-style: normal; font-size: 95%;}  
+  #stage{width: 83%;}
+  .zitate{font-size: 16.9px; letter-spacing: 2px; word-spacing: 1px;} 
+  .zitate_quellen{font-size: 11.8px; letter-spacing: 2px; word-spacing: 1px;}
+  .img_fixedsize_farbeROT{width: 55%;}
+  .img_fixedsize_GS{width: 35%;}  
+  #sidebar{left: 2.5%;}
+  .datenfeld_vollbild_ul{width: 93.6%;}  
+  #mnu_home{margin-left: 6.8%;}
+  #container_promotion{height:270px;}
+  .buch_info{height: 270px;}
+  #info_txt{font-size: 13px; line-height: 14px;}
+  #info_txt_next{font-size: 12.4px; word-spacing: 1.2px; line-height: 14px; margin-left: 12px; margin-right: 12px;}
+  .buch_img{height: 270px;}
+  .bild_vom_buch{width: 67%;}
+  .buch_isbn{height: 270px;}
+  .ebook{font-size: 14px; line-height: 16px;}
+  .isbn{font-family: 'arvoregular'; font-size: 10.6px;}
+  .videotitel{font-size: 10.5px; word-spacing: 0.8px;}
+  .datenfeld_content_stories{width: 91.2%;}  
+  #introduce_next{height: 270px;}
+  #erklaerung_impressum #info_impressum img{width: 54%;}
+  #erklaerung_datenschutz #info_datenschutz img{width: 54%;}
+  .apple_vorschrift{font-family: 'arvoregular'; font-size: 17px;}
+  .datenfeld_vollbild img#apple_img_link{width: 24%;}
+  #img_donate_whois{width: 13.6%; margin-top: 1.9%; margin-right: 4.8%; margin-bottom: 0.6%;}
+  #hotHouseEarth{padding-bottom: 43.0%;}  
+}
+ 
+
+/* Large devices (laptops/desktops, 992px and up) ORANGE */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+  body{background: #FFCC00;}  
+  h2{font-family: 'arvoregular'; font-style: normal;}
+  h3{font-family: 'arvoregular'; font-style: normal;}
+  #stage{width:82%;}
+  .img_fixedsize_farbeROT{width: 55%;}  
+  .img_fixedsize_GS{width: 35%;}  
+  #sidebar{left: 3.0%;}
+  .datenfeld_vollbild_ul{width: 94.6%;}  
+  #mnu_home{margin-left: 8.0%;}
+  #container_promotion{height:305px;}
+  .buch_info{height:305px;}
+  #info_txt{font-size: 14.6px;}
+  #info_txt_next{font-size: 14.2px; word-spacing: 1.2px; margin-left: 12px; margin-right: 12px;}
+  .buch_img{height:305px;}  
+  .buch_isbn{height:305px;}
+  .videotitel{margin-bottom: -0.1%;}
+  .datenfeld_content_stories{width:91.8%;}  
+  #introduce_next{height: 305px;}
+  #erklaerung_impressum #info_impressum img{width: 44%;}
+  #erklaerung_datenschutz #info_datenschutz img{width: 44%;}
+  .apple_vorschrift{font-family: 'arvobold';}
+  .datenfeld_vollbild img#apple_img_link{width: 24%;}
+  #img_donate_whois{width: 11.6%; margin-right: 3.8%; margin-bottom: 0.6%;}
+  #hotHouseEarth{padding-bottom: 47.0%;}  
+}  
+
+/* Extra large devices (large laptops and desktops, 1200px and up) BLUE */
+@media only screen and (min-width: 1200px) {
+  body{background:  #439ACF;}
+  h2{font-family: 'arvoregular'; font-style: normal;}
+  h3{font-family: 'arvoregular'; font-style: normal;}  
+}
