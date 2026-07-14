@@ -128,6 +128,10 @@ ABER ermöglich barrierefreie Darstellung (100%  = wie im Zielsystem vom Benutze
 font-size:16px;
 } 
 
+.center_text_content{
+text-align: center;
+}
+
 img {
 width: 100%;
 height: auto;
@@ -350,21 +354,29 @@ cursor:pointer;
 }
 
 .link_im_text{
+
+/*
 padding-top: 4px;
 padding-left: 5px;
 padding-right: 5px;
 padding-bottom: 4px;
+unten: border 1px*/
 background-color: #e9ede9;
 border-radius: 8px;
+padding-top: 3px;
+padding-left: 4px;
+padding-right: 4px;
+padding-bottom: 3px;
+border: 1px outset #d0d9d0;
 color: black;
 line-height: 175%;
 }
 
 .link_im_text:hover{
-padding-top: 4px;
-padding-left: 5px;
-padding-right: 5px;
-padding-bottom: 4px;
+padding-top: 3px;
+padding-left: 4px;
+padding-right: 4px;
+padding-bottom: 3px;
 background-color: #799496;
 border-radius: 8px;
 color: white;
@@ -522,6 +534,16 @@ transition: all 0.5s ease;
 width: 34%;
 }
 
+.img_fixedsize_99zuEins{
+width: 17%;
+margin-bottom: -5px;
+transition: all 0.5s ease;
+}
+
+.img_fixedsize_99zuEins:hover{
+width: 18%;
+}
+
 
 .img_fixedsize_GS{
 width: 20%;
@@ -560,6 +582,169 @@ background-color: white;
 #button_was_clicked{
 margin-top: -15px;
 display: none;
+}
+
+.iam_a_centered_legend{
+width: auto;
+margin-left: auto;
+margin-right: auto;
+}
+
+.box_content_centered{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.text_centered{
+text-align: center;
+}
+
+.fieldset_no_border{
+border: none;
+}
+
+#kriegsbereitschaft{
+margin-top:-5px;
+margin-bottom:15px;
+}
+
+#kriegsbereitschaft a:hover{
+color: white;
+background-color:#704214;
+background: rgba(112, 66, 20, 0.6);
+}
+
+#kriegsbereitschaft a{
+font-size:26px;
+letter-spacing:4px;
+padding-left: 0px;
+padding-right: 0px;
+border:0px;
+color: #CE4257;
+background: rgba(0,0,0,0);
+}
+
+#kriegsfibel legend a{
+font-size:26px;
+color: #CE4257;
+}
+
+#kriegsfibel legend a:hover{
+color: white;
+background-color:#CE4257;
+}
+
+#kriegsfibel{
+border: 1px solid #CE4257;
+background-image: url("../images/stuttgart_ausschnitt.jpg");
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#quote_begin{
+font-family: 'georgia';
+font-size: 26px;
+color: rgba(112, 66, 20, 0.6)
+}
+
+#quote_end{
+font-family: 'georgia';
+font-size: 26px;
+color: rgba(112, 66, 20, 0.6)
+}
+
+#kriegsfibel p {
+font-family: 'georgia';
+font-style: normal;
+font-weight: bold;
+line-height:26px;
+font-size: 14px;
+color: rgba(0, 0, 0, 1);
+}
+
+#kriegsfibel p:nth-child(8){
+font-size: 15px;
+font-style:normal;
+font-weight: normal;
+}
+
+#bg_diener_des_volkes{
+border: 1px solid #007797;
+height: 370px;
+background-image: url("../images/banner_flags.jpg");
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+border-radius: 10px 10px 10px 10px;
+margin-top: 5px;
+}
+
+.link_diener_des_volkes{
+border: 4px solid #007797;
+margin:5px auto 5px auto;
+width:30%;
+height: 60px;
+border-radius: 15px 15px 15px 15px;
+background-color: #CE4257;
+}
+
+.link_diener_des_volkes .stories_txt{
+padding-left:0px;
+color:white;
+}
+
+[data-diener_des_volkes-tooltip]::before {
+    /* Funktionalitaet: Wer, wann, Positionierung, unsichtbar */
+    content: attr(data-diener_des_volkes-tooltip);
+    position: absolute;
+    opacity: 0;
+    /* Erscheinungsform, mit transition */    	
+    transition: all 0.15s ease;
+	font-size: 10px;    	    	
+}
+
+[data-diener_des_volkes-tooltip]:hover::before {
+    /* Wer, wann, Positionierung, sichtbar  */
+    opacity: 1;
+    /* Erscheinungsform / mozilla zeigt symbol / andere Schriftzeichen */	
+	color:#007797;
+	text-shadow: 4px 1px white, 6px 3px #8899A6;
+	font-size: 180px;    	
+    margin-top: 177px;
+    margin-left: 0.6%;
+}
+
+@keyframes peacekeeping_airplanes {
+   100% {     
+	 background-position: 0px -1000%;	 
+	 }   
+}
+
+@keyframes peacekeeping_boats {
+   100% {     
+     background-position: 0px -1000%;	 
+   }   
+}
+
+#flightshow{
+
+
+/*background-image: url("../images/jets_x2.gif"), url("../images/deal_or_no_deal.gif");*/
+background-image: url("../images/jets_x2.gif"), url("../images/deal_or_no_deal.gif");
+background-size: 100%, 100%;
+background-repeat: repeat, repeat;
+animation: peacekeeping_boats 20000s linear;
+/*animation: peacekeeping_airplanes 1000s linear;*/
+animation-iteration-count: infinite;
+animation-direction:normal;
+}
+
+#a_legend_flightshow {
+padding:16px 28px 16px 28px;
+border: 4px solid #007797;
+border-radius: 10px;
 }
 
 @keyframes scroll {
@@ -1756,7 +1941,8 @@ justify-content: center;
   h2{font-family: 'arvoregular'; font-style: normal; font-size: 80%;}
   h3{font-family: 'arvoregular'; font-style: normal; font-size: 80%;}  
   .zitate{font-size: 13px; letter-spacing: 2px; word-spacing: 1px;} 
-  .zitate_quellen{font-size: 10px; letter-spacing: 2px; word-spacing: 1px;}
+  .zitate_quellen{font-size: 10px; letter-spacing: 2px; word-spacing: 1px;}  
+  .img_fixedsize_99zuEins{width: 38%; margin-bottom: -2px;}  
   .img_fixedsize_farbeROT{width: 70%;}
   .img_fixedsize_GS{width: 40%;}  
   #stage{width:100%;}
@@ -1777,6 +1963,23 @@ justify-content: center;
   .ebook{font-size: 10px; line-height: 12px;}
   .bild_bestellen{width: 80%;}
   .isbn{font-family: 'arvoregular'; font-size: 9.0px; line-height: 12px; margin-top: 0px;}
+  
+  #kriegsbereitschaft{margin-top:-6px; margin-bottom:10px;}
+  #kriegsfibel legend a{font-size:15px;}
+  #kriegsbereitschaft a{font-size:15px; letter-spacing:3px;}
+  #quote_begin{font-size: 20px;}
+  #quote_end{font-size: 20px;}
+  #kriegsfibel p {font-size: 11px; line-height:20px;}  
+  #kriegsfibel p:nth-child(8){font-size: 11px;}
+  
+  #bg_diener_des_volkes{height: 320px;}
+  .link_diener_des_volkes{width:83.7%; height:50px;}
+  [data-diener_des_volkes-tooltip]:hover::before  {display: none;}
+
+  #a_legend_flightshow {padding:16px 22px 16px 22px;}
+  
+  #deal_or_no_deal{background:url("../images/deal_or_no_deal_x5.gif"); background-size: 100%; animation-duration: 4800s; animation-direction: normal;}
+  
   #stories_headline{font-size: 16px;}
   #info_headline{font-size: 16px;}
   #donate_headline{font-size: 16px;}
@@ -1821,7 +2024,8 @@ justify-content: center;
   h2{font-family: 'arvoregular'; font-style: normal; font-size: 85%;}
   h3{font-family: 'arvoregular'; font-style: normal; font-size: 85%;}
   .zitate{font-size: 12.8px; letter-spacing: 2px; word-spacing: 1px;} 
-  .zitate_quellen{font-size: 9.6px; letter-spacing: 2px; word-spacing: 1px;}
+  .zitate_quellen{font-size: 9.6px; letter-spacing: 2px; word-spacing: 1px;}  
+  .img_fixedsize_99zuEins{width: 38%; margin-bottom: -3px;}  
   .img_fixedsize_farbeROT{width: 65%;}
   .img_fixedsize_GS{width: 35%;}  
   #stage{width: 83%;}
@@ -1842,6 +2046,23 @@ justify-content: center;
   .ebook{font-size: 13px; line-height: 16px;}
   .bild_bestellen{width: 75%;}
   .isbn{font-family: 'arvoregular'; font-size: 10.0px;}
+  
+  #kriegsbereitschaft{margin-top:-6px; margin-bottom:10px;}
+  #kriegsfibel legend a{font-size:22px;}
+  #kriegsbereitschaft a{font-size:18px; letter-spacing:3px;}
+  #quote_begin{font-size: 22px;}
+  #quote_end{font-size: 22px;}
+  #kriegsfibel p {font-size: 12px; line-height:22px;}  
+  #kriegsfibel p:nth-child(8){font-size: 10px; font-style: bold; font-weight:bold;}
+  
+  #bg_diener_des_volkes{height: 320px;}
+  .link_diener_des_volkes{width:74.3%; height:50px;}
+  [data-diener_des_volkes-tooltip]:hover::before  {display: none;}
+
+  #a_legend_flightshow {padding:16px 22px 16px 22px;}  
+  
+  #deal_or_no_deal{background:url("../images/deal_or_no_deal_x3.gif"); background-size: 100%; animation-duration: 6000s; animation-direction: reverse;}
+  
   #stories_headline{font-size: 21px;}
   #info_headline{font-size: 21px;}
   #donate_headline{font-size: 21px;}
@@ -1868,7 +2089,8 @@ justify-content: center;
   h3{font-family: 'arvoregular'; font-style: normal; font-size: 95%;}  
   #stage{width: 83%;}
   .zitate{font-size: 16.9px; letter-spacing: 2px; word-spacing: 1px;} 
-  .zitate_quellen{font-size: 11.8px; letter-spacing: 2px; word-spacing: 1px;}
+  .zitate_quellen{font-size: 11.8px; letter-spacing: 2px; word-spacing: 1px;}  
+  .img_fixedsize_99zuEins{width: 28%; margin-bottom: -4px;}  
   .img_fixedsize_farbeROT{width: 55%;}
   .img_fixedsize_GS{width: 35%;}  
   #sidebar{left: 2.5%;}
@@ -1883,6 +2105,24 @@ justify-content: center;
   .buch_isbn{height: 270px;}
   .ebook{font-size: 14px; line-height: 16px;}
   .isbn{font-family: 'arvoregular'; font-size: 10.6px;}
+  
+  #kriegsbereitschaft{margin-top:-6px; margin-bottom:10px;}
+  #kriegsfibel legend a{font-size:24px;}
+  #kriegsbereitschaft a{font-size:24px; letter-spacing:4px;}
+  #quote_begin{font-size: 26px;}
+  #quote_end{font-size: 26px;}
+  #kriegsfibel p {font-size: 12px; line-height:26px;}  
+  #kriegsfibel p:nth-child(8){font-size: 11px; font-style: bold; font-weight:bold;}
+  
+  #bg_diener_des_volkes{height: 370px;}
+  .link_diener_des_volkes{width:55%; height:60px;}
+  [data-diener_des_volkes-tooltip]:hover::before 
+   {opacity: 1; text-shadow: 4px 1px white, 6px 3px #8899A6; 	font-size: 90px; margin-top: 177px; margin-left: 0.6%;}
+   
+  #a_legend_flightshow {padding:15px 16px 15px 16px;} 
+  
+  #deal_or_no_deal{background:url("../images/deal_or_no_deal_x3.gif"); background-size: 100%; animation-duration: 5300s; animation-direction: reverse;}
+  
   .videotitel{font-size: 10.5px; word-spacing: 0.8px;}
   .datenfeld_content_stories{width: 91.2%;}  
   #introduce_next{height: 270px;}
@@ -1900,7 +2140,8 @@ justify-content: center;
   body{background: #FFCC00;}  
   h2{font-family: 'arvoregular'; font-style: normal;}
   h3{font-family: 'arvoregular'; font-style: normal;}
-  #stage{width:82%;}
+  #stage{width:82%;}  
+  .img_fixedsize_99zuEins{width: 28%; margin-bottom: -4px;}  
   .img_fixedsize_farbeROT{width: 55%;}  
   .img_fixedsize_GS{width: 35%;}  
   #sidebar{left: 3.0%;}
@@ -1912,6 +2153,25 @@ justify-content: center;
   #info_txt_next{font-size: 14.2px; word-spacing: 1.2px; margin-left: 12px; margin-right: 12px;}
   .buch_img{height:305px;}  
   .buch_isbn{height:305px;}
+  
+  #kriegsbereitschaft{margin-top:-6px; margin-bottom:10px;}
+  #kriegsfibel legend a{font-size:24px;}
+  #kriegsbereitschaft a{font-size:24px; letter-spacing:4px;}
+  #quote_begin{font-size: 26px;}
+  #quote_end{font-size: 26px;}
+  #kriegsfibel p {font-size: 12px; line-height:26px;}  
+  #kriegsfibel p:nth-child(8){font-size: 11px; font-style: bold; font-weight:bold;}
+  
+  #bg_diener_des_volkes{height: 370px;}
+  .link_diener_des_volkes{width:42%; height:60px;}
+  [data-diener_des_volkes-tooltip]:hover::before 
+   {opacity: 1; text-shadow: 4px 1px white, 6px 3px #8899A6; 	font-size: 90px; margin-top: 177px; margin-left: 0.6%;}
+   
+  #a_legend_flightshow {padding:15px 28px 15px 28px;}
+  
+  #deal_or_no_deal{background:url("../images/deal_or_no_deal_x2.gif"); background-size: 100%; animation-duration: 4700s; animation-direction: reverse;}
+  
+  
   .videotitel{margin-bottom: -0.1%;}
   .datenfeld_content_stories{width:91.8%;}  
   #introduce_next{height: 305px;}
